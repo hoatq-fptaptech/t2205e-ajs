@@ -1,0 +1,16 @@
+<div class="classroom">
+    <h2>{{myclass.name}}</h2>
+    <h3>{{myclass.room}}</h3>
+    <p>{{myclass.sem}}</p>
+    <h1>{{count}}</h1>
+    <button (click)="changeCount()">Click </button>
+    <input type="number" [(ngModel)]="count"/>
+    <h2>Giáo viên chủ nhiệm</h2>
+    <teacher [data]="teacher"></teacher>
+    <div>
+        <h2>Danh sách sinh viên:</h2>
+        <student studentData="students[0]"></student>
+        <student studentData="students[1]"></student>
+       
+    </div>
+</div>
