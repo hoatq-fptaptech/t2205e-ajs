@@ -9,8 +9,7 @@
     <teacher [data]="teacher"></teacher>
     <div>
         <h2>Danh sách sinh viên:</h2>
-        <student studentData="students[0]"></student>
-        <student studentData="students[1]"></student>
-       
+        <student *ngFor="let d of students" [studentData]="d"></student>
+  
     </div>
 </div>

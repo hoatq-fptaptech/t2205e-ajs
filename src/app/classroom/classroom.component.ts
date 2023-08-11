@@ -31,6 +31,13 @@ export class ClassRoomComponent{
             tel: "098765145",
             classroom:"T2304E",
             address:"9 TOn that thuyet"
+        },
+
+        {
+            name:"Bùi Như Lạc",
+            tel: "098765145",
+            classroom:"T2304E",
+            address:"9 TOn that thuyet"
         }
     ];
 
