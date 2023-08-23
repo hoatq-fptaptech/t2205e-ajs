@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import {HttpClientModule} from '@angular/common/http';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'categories', component: CategoriesComponent}
@@ -23,7 +23,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
