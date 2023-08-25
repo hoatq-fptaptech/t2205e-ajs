@@ -7,12 +7,13 @@ import { Component } from "@angular/core";
 })
 export class CategoriesComponent{
     forecast: any = [];
+    inputValue = "";
 
     constructor(private http: HttpClient){ // reflection
     }
 
     ngOnInit(){
-        this.getForecast("hanoi");
+        this.getForecast("miami");
     }
 
     getForecast(city:String){
@@ -20,5 +21,9 @@ export class CategoriesComponent{
         this.http.get<any>(url).subscribe(data=>{
             this.forecast = data.list;
         })
+    }
+
+    find(){
+        this.getForecast(this.inputValue);
     }
 }

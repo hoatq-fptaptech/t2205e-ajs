@@ -1,6 +1,14 @@
 <div class="bg"></div>
 <section>
     <div class="container">
+        <form (submit)="find()" action="#" method="post">
+            <input [(ngModel)]="inputValue" name="city" type="text" placeholder="city"/>
+            <button type="submit" class="btn btn-primary">Find</button>
+        </form>
+    </div>
+</section>
+<section>
+    <div class="container">
         <div class="row" id="list">
             <div *ngFor="let f of forecast" class="col-3">
                 <div class="card temp mt-3 mb-3">
