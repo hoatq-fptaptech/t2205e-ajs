@@ -2,3 +2,7 @@
 <h2>Tên sản phẩm: {{product.title}}</h2>
 <h2>Gía sản phẩm: {{product.price}}</h2>
 <img src="{{product.thumbnail}}"/>
+
+<ul>
+    <li *ngFor="let img of product.images"><img (click)="changeImg(img)" src="{{img}}" width="100"/></li>
+</ul>

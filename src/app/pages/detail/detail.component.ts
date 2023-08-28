@@ -23,7 +23,13 @@ export class DetailComponent{
     getProduct(){
         const url = `https://dummyjson.com/products/${this.id}`;
         this.http.get<any>(url).subscribe(data=>{
-            this.product = data
+            this.product = data;
+            // gia su ko co thumb trong images
+            // this.product.images.push(data.thumbnail);
         })
+    }
+
+    changeImg(urlImg: string){
+        this.product.thumbnail = urlImg;
     }
 }
