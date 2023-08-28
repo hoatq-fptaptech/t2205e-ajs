@@ -14,6 +14,10 @@ export class CategoriesComponent{
 
     ngOnInit(){
         this.getForecast("miami");
+
+        var x = 100;
+        var y = 8;
+        var z = x%y==0? x/y:x/y+1; // toán tử 3 ngồi
     }
 
     getForecast(city:String){

@@ -8,16 +8,19 @@ import { HomeComponent } from './pages/home/home.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'categories', component: CategoriesComponent}
+  {path: 'categories', component: CategoriesComponent},
+  {path: 'search', component: SearchComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
