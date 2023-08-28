@@ -23,7 +23,11 @@
                 <div class="card">
                     <img src={{p.thumbnail}} height="150px"/>
                     <div class="card-body">
-                        <h2>{{p.title}}</h2>
+                        <h2>
+                          <a routerLink="{{'/detail/'+p.id}}">
+                            {{p.title}}
+                          </a>
+                        </h2>
                         <p>{{p.description}}</p>
                         <p>${{p.price}}</p>
                     </div>

@@ -9,10 +9,12 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchComponent } from './pages/search/search.component';
+import { DetailComponent } from './pages/detail/detail.component';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'categories', component: CategoriesComponent},
-  {path: 'search', component: SearchComponent}
+  {path: 'search', component: SearchComponent},
+  {path: 'detail/:id', component: DetailComponent}
 ];
 
 @NgModule({
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     CategoriesComponent,
-    SearchComponent
+    SearchComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
